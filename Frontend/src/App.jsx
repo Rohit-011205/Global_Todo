@@ -13,7 +13,7 @@ function App() {
 
       </div>
 
-      <div className="form mt-25 w-full max-w-xl bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-3xl shadow-2xl p-6 md:p-10">
+      <div className="form mt-10   w-full max-w-xl p-6 md:p-10">
         <Tasks />
       </div>
     </div>
