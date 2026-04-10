@@ -34,7 +34,7 @@ router.post("/tasks", (req, res) => {
 
 router.patch("/tasks/:id", (req, res) => {
     const id = parseInt(req.params.id);
-    const task = tasks.findIndex(t => t.id === id);
+    const task = tasks.find(t => t.id === id);
 
     if (!task) {
         return res.status(404).json({ message: "Task not found" });
@@ -54,7 +54,7 @@ router.patch("/tasks/:id", (req, res) => {
 
 router.delete("/tasks/:id", (req, res) => {
     const id = parseInt(req.params.id);
-    const task = tasks.find(t => t.id === id);
+    const task = tasks.findIndex(t => t.id === id);
 
     if (!task) {
         return res.status(404).json({ message: "Task not found" });
