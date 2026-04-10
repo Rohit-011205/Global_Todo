@@ -54,6 +54,11 @@ App runs on `http://localhost:5173`
 - Completed tasks move to bottom automatically
 - Loading and error states handled
 
+## Bonus Features Implemented 
+
+- Filter Tasks: Users can toggle between "All""Completed", and "Pending" views.
+- Task Descriptions: Added a secondary field for task details beyond the title.
+
 ## Assumptions & Trade-offs
 
 - Used in-memory storage instead of a database since the assignment allows it. Tasks reset on server restart.
